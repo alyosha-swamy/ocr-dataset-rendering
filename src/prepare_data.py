@@ -40,8 +40,7 @@ def get_text_dataset():
     datasets = [
         load_dataset(k, split="train", streaming=True)
         for k in (
-            "ChristophSchuhmann/wikipedia-en-nov22-1-sentence-level",
-            "ChristophSchuhmann/1-sentence-level-gutenberg-en_arxiv_pubmed_soda",
+            "Alyosha11/scraped",
         )
     ]
     shuffled_dataset_iters = MultipleDatasetShuffleIterator(datasets)
